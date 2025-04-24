@@ -1,4 +1,4 @@
-package day03.part03;
+package day03.part04;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -11,19 +11,19 @@ public class Main {
         emp1.setEmpId(101);
         emp1.setFullName("Anton");
         emp1.setHireDate(LocalDate.of(2025,4,12));
-        emp1.setRole("Programmer");
+        emp1.setRole(Roles.PROGRAMMER);
         emp1.setSalary(6_000_000);
 
         //System.out.println(emp1.toString());
 
         Employee emp2 = new Employee(102,"Budi",
                 LocalDate.of(2025,1,12),
-                "PROGRAMMER",6_000_000);
+                Roles.PROGRAMMER,6_000_000);
 
 
         Employee emp3 = new Employee("Rini",
                 LocalDate.of(2025,1,12),
-                "SALES",6_000_000);
+                Roles.SALES,6_000_000);
 
 
 
@@ -36,8 +36,8 @@ public class Main {
 
 
         //contoh aja : call overloading method, contoh polymorphism di level methods
-        prog1.getTunjangan(100);
-        prog1.getTunjangan(200,LocalDate.of(2025,1,12));
+        /*prog1.getTunjangan(100);
+        prog1.getTunjangan(200,LocalDate.of(2025,1,12));*/
 
         Employee emp5 = new Programmer("Yuli",
                 LocalDate.of(2025,1,16),6_000_000,500_000);
@@ -49,6 +49,6 @@ public class Main {
         }
 
         // totalEmployee dimiliki oleh class, bukan object instance
-        System.out.println("Total Employee : "+Employee.totalEmployee);
+        System.out.println("Total Employee : "+ Employee.totalEmployee);
     }
 }
