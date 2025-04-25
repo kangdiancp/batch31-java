@@ -10,7 +10,7 @@ import java.util.List;
 
 public class EmployeeImpl implements IEmployee{
     @Override
-    public List<Programmer> initListEmployee() {
+    public List<Employee> initListEmployee() {
 
         Programmer emp1 = new Programmer(101,"Yuli",
                 LocalDate.of(2025,12,12), Roles.PROGRAMMER,6_000_000,

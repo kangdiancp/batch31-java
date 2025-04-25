@@ -6,7 +6,7 @@ import day03.part06.hr.Programmer;
 import java.util.List;
 
 public interface IEmployee {
-    List<Programmer> initListEmployee();
+    List<Employee> initListEmployee();
 
     void displayEmployees(List<Programmer> employees);
 
