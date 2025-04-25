@@ -4,6 +4,7 @@ public class Customer extends Person{
 
     private double totalPurchase;
 
+
     public Customer(String nationalId, String fullName) {
         super(nationalId, fullName);
     }

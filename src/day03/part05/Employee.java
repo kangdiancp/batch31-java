@@ -15,6 +15,7 @@ public class Employee extends  Person implements ITask{
 
 
 
+
     public Employee(String nationalId, String fullName, int empId, LocalDate hireDate, Roles role, double salary, double totalSalary) {
         super(nationalId, fullName);
         this.empId = empId;
